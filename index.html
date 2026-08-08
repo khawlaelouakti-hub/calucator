@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate Cake Recipe</title>
+    <style>
+        /* ---------- General Styles ---------- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fdf2e9;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Main Card */
+        .recipe-card {
+            max-width: 700px;
+            width: 100%;
+            background-color: white;
+            border-radius: 30px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border: 1px solid #f0d5c0;
+        }
+
+        /* Title & Image */
+        h1 {
+            color: #5d3a2b;
+            font-size: 2.2rem;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .image-placeholder {
+            width: 100%;
+            height: 200px;
+            background-color: #d9b8a4;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 1.2rem;
+            margin: 15px 0 25px 0;
+            background-image: url('choocolat.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Quick Info (Flexbox) */
+        .quick-info {
+            display: flex;
+            justify-content: space-around;
+            background-color: #fcf3ed;
+            padding: 15px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .quick-info span {
+            font-weight: bold;
+            color: #5d3a2b;
+        }
+
+        /* Ingredients & Instructions */
+        h2 {
+            color: #7a4d36;
+            border-bottom: 3px solid #f0d5c0;
+            padding-bottom: 8px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        ul, ol {
+            padding-left: 25px;
+            line-height: 1.9;
+            color: #333;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        /* Footer */
+        .footer-note {
+            margin-top: 30px;
+            text-align: center;
+            background-color: #fdf2e9;
+            padding: 15px;
+            border-radius: 15px;
+            color: #5d3a2b;
+            font-style: italic;
+            border: 1px dashed #d9b8a4;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="recipe-card">
+        
+        <!-- 1. Title -->
+        <header>
+            <h1>🍫 Chocolate Sponge Cake</h1>
+        </header>
+
+        <!-- 2. Image Placeholder -->
+        <div class="image-placeholder">
+            <!-- Add your own image here later -->
+        </div>
+
+        <!-- 3. Quick Info -->
+        <section class="quick-info">
+            <div><span>⏱️ Prep Time:</span> 15 mins</div>
+            <div><span>🔥 Cook Time:</span> 30 mins</div>
+            <div><span>🍰 Servings:</span> 8 people</div>
+        </section>
+
+        <!-- 4. Ingredients -->
+        <section>
+            <h2>🛒 Ingredients</h2>
+            <ul>
+                <li>2 cups all-purpose flour</li>
+                <li>1 cup granulated sugar</li>
+                <li>½ cup vegetable oil</li>
+                <li>3 eggs (room temperature)</li>
+                <li>1 cup whole milk</li>
+                <li>⅓ cup unsweetened cocoa powder</li>
+                <li>1 tablespoon baking powder</li>
+                <li>A pinch of salt and vanilla extract</li>
+            </ul>
+        </section>
+
+        <!-- 5. Instructions -->
+        <section>
+            <h2>👩‍🍳 Instructions</h2>
+            <ol>
+                <li><strong>Preheat</strong> your oven to 180°C (350°F).</li>
+                <li>In a large bowl, <strong>beat the eggs and sugar</strong> with an electric mixer until creamy.</li>
+                <li><strong>Add the oil and milk</strong> and mix well.</li>
+                <li>In another bowl, <strong>sift the flour, cocoa powder, baking powder, and salt</strong> together.</li>
+                <li><strong>Gradually add the dry ingredients</strong> to the wet mixture, mixing gently.</li>
+                <li><strong>Pour the batter</strong> into a greased baking pan and bake for 30 minutes.</li>
+                <li><strong>Let it cool</strong> completely before slicing. Serve with tea or coffee!</li>
+            </ol>
+        </section>
+
+        <!-- 6. Chef's Tip -->
+        <footer class="footer-note">
+            💡 Chef's Tip: Add a pinch of instant coffee to the cocoa powder for a richer chocolate flavor!
+        </footer>
+
+    </div>
+
+</body>
+</html>
