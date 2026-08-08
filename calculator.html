@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> calculator </title>
+  <style>
+    body { display: flex; justify-content: center; align-items: center; height: 100vh; font-family: Arial; background: #f0f0f0; }
+    .calc { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); text-align: center; }
+    input, select, button { padding: 12px; margin: 8px; font-size: 18px; border: 1px solid #ddd; border-radius: 8px; }
+    button { background: #007bff; color: white; border: none; cursor: pointer; width: 100px; }
+    button:hover { background: #0056b3; }
+    #result { font-size: 28px; font-weight: bold; color: #333; margin-top: 15px; }
+  </style>
+</head>
+<body>
+<div class="calc">
+  <h2> calculator </h2>
+  <input type="number" id="num1" placeholder="number 1">
+  <select id="operator">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+  </select>
+  <input type="number" id="num2" placeholder="number 2">
+  <br>
+  <button id="calculate"> calcul</button>
+  <div id="result">0</div>
+</div>
+<script>
+  document.getElementById('calculate').addEventListener('click', function() {
+    const num1 = parseFloat(document.getElementById('num1').value);
+    const num2 = parseFloat(document.getElementById('num2').value);
+    const operator = document.getElementById('operator').value;
+    let result;
+
+    if (isNaN(num1) || isNaN(num2)) {
+      result = 'enter number correct' ;
+    } else {
+      switch (operator) {
+        case '+': result = num1 + num2; break;
+        case '-': result = num1 - num2; break;
+        case '*': result = num1 * num2; break;
+        case '/': result = num2 !== 0 ? num1 / num2 : 'no dvised 0'; break;
+      }
+    }
+    document.getElementById('result').textContent = result;
+  });
+</script>
+</body>
+</html>
